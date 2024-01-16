@@ -5,64 +5,96 @@
     padding: 0;
 }
 
+.container{
+    display: flex;
+}
+
 .sidebar{
-    -webkit-text-fill-color: aliceblue;
+    /* position: fixed; */
     background-color: black;
-    width: 20vw;
+    width: 20%;
     font-family: "Tektur", sans-serif;
-    height: 114vh;
+    height: 100vh;
+    z-index: 1;
+    padding: 20px;
 }
 .sidebar nav{
     padding:  20px
 }
-
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
 .sidebar nav li{
     list-style: none;
     font-size: 20px;
     padding: 35px 0;
 }
-
+.sidebar nav li:hover{
+    color: linear-gradient(45deg, rgb(135, 65, 65), transparent);;
+    background: linear-gradient(45deg, rgb(121, 33, 33), transparent);
+}
 .sidebar nav li a{
     text-decoration: none;
     color: white;
 }
 
-.main{
-    background-color:  rgb(20 76 92);
-    width:90vw ;
-}
 
-.container{
-    display: flex;
-}
 
 .infomain{
-    padding-top: 2vh;
-    padding-left: 4vh;
-    padding-right: 4vh;
+    width: 80%;
+    padding: 20px;
+    margin-left: 0%;
+    /* position: relative; */
+    justify-content: center; /* Center children horizontally */
+    align-items: center; /* Center children vertically */
+    /* position:fixed; */
+    /* left: 20%;
+    bottom: 10%; */
     background: linear-gradient(45deg, black, transparent);
-    height: 50vh;
-    width: 82vw;
-    margin-top:25vh;
-    display: flex;
-    justify-content: space-around;
+    color: #f1f1f1;
+    /* z-index: 2; */
+    /* height: 100vh;  */
 }
 
-
+#backVideo{
+    /* position: fixed;
+    right: 0;
+    left:20%;
+    bottom: 0; */
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
 
 .dev-devinfo {
     display: flex;
     -webkit-text-fill-color: white;
-    justify-content: center;
+    background: linear-gradient(45deg, black, transparent);
+
     flex-direction: column;
+    align-items:start ;
+    /* text-align: center; */
+    justify-content: center;
     font-family: "Source Code Pro", monospace;
+    position: relative;
+    z-index: 1;
+    margin-top: 20%;
 }
 
 .hello{
     font-size: 35px;
 }
 
-.about:hover{
+.hello:hover{
+    font-size: 40px;
+    color: linear-gradient(45deg, rgb(135, 65, 65), transparent);;
+    background: linear-gradient(45deg, rgb(121, 33, 33), transparent);
+}
+
+.about{
     font-size: 20px;
 }
 
@@ -90,6 +122,7 @@
     font-weight: bold;
     background: radial-gradient(black, transparent);
     cursor: pointer;
+    font-size: large;
 }
 
 .button button:hover{
@@ -97,9 +130,9 @@
     background: linear-gradient(45deg, rgb(121, 33, 33), transparent);
 }
 
-.dev-picture img{
-    height: 48vh;
-}
+/* .dev-picture img{
+    height: 35vh;
+} */
 
 
 .myinfo{
