@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Tektur:wght@400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Tektur:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap')
+
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0%;
+    padding: 0%;
 }
 
 .container{
@@ -79,7 +81,7 @@
     align-items:start ;
     /* text-align: center; */
     justify-content: center;
-    font-family: "Source Code Pro", monospace;
+    /* font-family: "Source Code Pro", monospace; */
     position: relative;
     z-index: 1;
     margin-top: 20%;
@@ -96,21 +98,23 @@
 }
 
 .about{
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .about:hover{
-    font-size: 25px;
+    font-size: 28px;
     color: linear-gradient(45deg, rgb(135, 65, 65), transparent);;
     background: linear-gradient(45deg, rgb(121, 33, 33), transparent);
 }
 
 .moreabout{
-    font-size: 15px;
-    font-family: "Source Code Pro", monospace;
+    font-size: 19px;
+    font-family: "Josefin Sans", sans-serif;
+
+    /* font-family: "Source Code Pro", monospace; */
 }
 .moreabout:hover{
-    font-size: 20px;
+    font-size: 23px;
     color: linear-gradient(45deg, rgb(135, 65, 65), transparent);;
     background: linear-gradient(45deg, rgb(121, 33, 33), transparent);
 }
@@ -144,8 +148,9 @@
     padding-right:34%;
     padding-bottom: 14%;
     padding-top: 10%;
+    font-size: small;
 }
-.contact-details,
+.contact-detail,
 .contact-form {
     padding: 10%;
     -webkit-text-fill-color: aliceblue;    
@@ -166,43 +171,63 @@
     gap: 10px;
 }
 
+.form-group{
+    font-size: large;
+}
+
+.linkedin{
+font-size: large;
+}
+.email{
+font-size: large;
+}
+.github{
+font-size: large;
+}
+
+
 .email a{
     color: white;
+    font-size: large;
+}
+.email a:hover{
+    /* color: rgb(186, 134, 30); */
+    background: rgb(221, 172, 38);
+    padding: 1%;
 }
 .linkedin a{
     color: white;
+    font-size: large;
+}
+.linkedin a:hover{
+    /* color: rgb(186, 134, 30); */
+    background: rgb(221, 172, 38);
+    padding: 1%;
 }
 .github a{
     color: white;
+    font-size: large;
 }
-
-
-
-/* .contact{
-    
-    background: linear-gradient(45deg, black, transparent);
-    -webkit-text-fill-color: aliceblue;
-    padding: 130px;
-    height: 15vh;
-    margin-left: 23%;
+.github a:hover{
+    /* color: rgb(186, 134, 30); */
+    background: rgb(221, 172, 38);
+    padding: 1%;
 }
-
-.myinfo a{
-    color: white;
-}
-
-
-.contactform{
-    background: linear-gradient(45deg, black, transparent);
-    -webkit-text-fill-color: aliceblue;
-    padding: 120px;
-    height: 15vh;
-    margin-left: 23%;
-
-} */
 
 .form-control::placeholder {
-    background: linear-gradient(143deg, black, transparent);
+    font-size: medium;
+    background: black;
+    color: black;
+}
+
+.form-control{
+    font-size: medium;
+    background-color: black;
+    color: black;
+}
+
+.form-text{
+font-size: medium;
 }
 
 .btn-primary{
@@ -216,9 +241,15 @@
     padding: 12px;
 }
 
+.btn-primary{
+    font-size: large;
+}
+
+
+
 .aboutinfo{
     width: 60%;
-    padding: 30px;
+    padding: 43px;
     padding-right: 17%;
     margin-left: 23%;
     height: 95%;
@@ -228,7 +259,26 @@
     color: #f1f1f1;
 }
 
-.dev-picture img{
+.myname{
+    display: flex;
+    background: linear-gradient(143deg, black, transparent);
+    padding-right: 0%;
+}
+
+.akshit{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 400%;
+    padding-left: 4%;
+}
+
+.dev-picture{
+    height: 35vh;
+    margin-left: 18.5%;
+}
+
+.dev-picture img {
     height: 35vh;
 }
 
@@ -254,13 +304,15 @@
 }
 
 .project {
-    font-family: "Tektur", sans-serif;
+    font-family: "Source Code Pro", monospace;
     font-size: 15px;
     background: linear-gradient(45deg, black, transparent);
     color: #fff;
-    padding:16px;
+    /* padding:16px; */
     margin: 10px 0;
-    border-radius: 2px;
+    padding-bottom: 4%;
+    padding-left: 3%;
+    border-radius: 1px;
 }
 
 .project h3 {
