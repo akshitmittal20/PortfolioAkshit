@@ -130,9 +130,7 @@
     background: linear-gradient(45deg, rgb(121, 33, 33), transparent);
 }
 
-/* .dev-picture img{
-    height: 35vh;
-} */
+
 
 
 .myinfo{
@@ -167,4 +165,20 @@
     color: rgb(186, 134, 30);
     background: rgb(221, 172, 38);
     padding: 12px;
+}
+
+.aboutinfo{
+    width: 80%;
+    padding: 30px;
+    padding-right: 17%;
+    margin-left: 0%;
+    height: 91%;
+    justify-content: center; /* Center children horizontally */
+    align-items: center; /* Center children vertically */
+    background: linear-gradient(143deg, black, transparent);
+    color: #f1f1f1;
+}
+
+.dev-picture img{
+    height: 35vh;
 }
