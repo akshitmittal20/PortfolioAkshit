@@ -10,7 +10,7 @@
 }
 
 .sidebar{
-    /* position: fixed; */
+    position: fixed;
     background-color: black;
     width: 20%;
     font-family: "Tektur", sans-serif;
@@ -44,7 +44,8 @@
 .infomain{
     width: 80%;
     padding: 20px;
-    margin-left: 0%;
+    padding-left: 3%;
+    margin-left: 23%;
     /* position: relative; */
     justify-content: center; /* Center children horizontally */
     align-items: center; /* Center children vertically */
@@ -131,13 +132,59 @@
 }
 
 
+.contact {
+    -webkit-text-fill-color: aliceblue;
+    display: flex;
+    background: linear-gradient(143deg, black, transparent);
+    flex-direction: column;
+    /* max-width: 800px; */
+    margin-left: 23%;
+    padding: 18%;
+    padding-left: 2%;
+    padding-right:34%;
+    padding-bottom: 14%;
+    padding-top: 10%;
+}
+.contact-details,
+.contact-form {
+    padding: 10%;
+    -webkit-text-fill-color: aliceblue;    
+    background: linear-gradient(143deg, black, transparent);
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.contact-details h2,
+.contact-form h2 {
+    text-align: center;
+}
+
+.contact-form form {
+    display: grid;
+    gap: 10px;
+}
+
+.email a{
+    color: white;
+}
+.linkedin a{
+    color: white;
+}
+.github a{
+    color: white;
+}
 
 
-.myinfo{
+
+/* .contact{
+    
     background: linear-gradient(45deg, black, transparent);
     -webkit-text-fill-color: aliceblue;
     padding: 130px;
     height: 15vh;
+    margin-left: 23%;
 }
 
 .myinfo a{
@@ -150,14 +197,16 @@
     -webkit-text-fill-color: aliceblue;
     padding: 120px;
     height: 15vh;
-}
+    margin-left: 23%;
+
+} */
 
 .form-control::placeholder {
-    background: linear-gradient(45deg, black, transparent);
+    background: linear-gradient(143deg, black, transparent);
 }
 
 .btn-primary{
-    background: linear-gradient(45deg, black, transparent);  
+    background: linear-gradient(143deg, black, transparent);  
     padding: 8px;
 }
 
@@ -168,11 +217,11 @@
 }
 
 .aboutinfo{
-    width: 80%;
+    width: 60%;
     padding: 30px;
     padding-right: 17%;
-    margin-left: 0%;
-    height: 91%;
+    margin-left: 23%;
+    height: 95%;
     justify-content: center; /* Center children horizontally */
     align-items: center; /* Center children vertically */
     background: linear-gradient(143deg, black, transparent);
@@ -181,4 +230,49 @@
 
 .dev-picture img{
     height: 35vh;
+}
+
+.techstack{
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.journey {
+    background-color: #2ecc71;
+    color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.journey h3 {
+    margin-bottom: 10px;
+}
+
+.project {
+    font-family: "Tektur", sans-serif;
+    font-size: 15px;
+    background: linear-gradient(45deg, black, transparent);
+    color: #fff;
+    padding:16px;
+    margin: 10px 0;
+    border-radius: 2px;
+}
+
+.project h3 {
+    margin-bottom: 8px;
+}
+.project a{
+    font-weight: lighter;
+    color: white;
+}
+
+.project:hover{
+    font-size: 18px;
+    color: linear-gradient(45deg, rgb(135, 65, 65), transparent);;
+    background: linear-gradient(45deg, rgb(121, 33, 33), transparent);
 }
