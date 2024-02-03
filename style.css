@@ -13,15 +13,14 @@
 
 .sidebar{
     position: fixed;
-    background-color: black;
-    width: 20%;
-    font-family: "Tektur", sans-serif;
+    left: 0;
+    top: 0;
+    width: 18.5%;
     height: 100vh;
-    z-index: 1;
+    font-family: "Tektur", sans-serif;
+    background-color: rgb(53, 7, 7);
     padding: 20px;
-}
-.sidebar nav{
-    padding:  20px
+    /* z-index: 1; */
 }
 .sidebar nav ul {
     list-style: none;
@@ -33,10 +32,11 @@
     padding: 35px 0;
 }
 .sidebar nav li:hover{
-    color: linear-gradient(45deg, rgb(135, 65, 65), transparent);;
     background: linear-gradient(45deg, rgb(121, 33, 33), transparent);
 }
 .sidebar nav li a{
+    display: block;
+    padding: 0px 6px 8px;
     text-decoration: none;
     color: white;
 }
