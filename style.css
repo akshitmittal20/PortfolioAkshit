@@ -90,7 +90,6 @@
 
 .about:hover{
     font-size: 28px;
-    color: linear-gradient(45deg, rgb(135, 65, 65), transparent);;
     background: linear-gradient(45deg, rgb(121, 33, 33), transparent);
 }
 
@@ -241,15 +240,17 @@ font-size: medium;
 
 
 .aboutinfo{
-    height: 100vh;
+    /* height: 140vh; */
     width: 100vw;
+    display: flex;
+    flex-direction: column;
     /* margin-left: 10px; */
-
+    margin-bottom: 0%;
     padding: 43px;
     padding-right: 7%;
     margin-left: 200px;
     justify-content: center; /* Center children horizontally */
-    align-items: center; /* Center children vertically */
+    /* align-items: center; Center children vertically */
     background: linear-gradient(143deg, black, transparent);
     color: #f1f1f1;
 }
@@ -258,6 +259,9 @@ font-size: medium;
     display: flex;
     background: linear-gradient(143deg, black, transparent);
     padding-right: 0%;
+    padding-left: 0;
+    width: 80vw;
+    margin-right: 10%;
 }
 
 .akshit{
@@ -265,19 +269,28 @@ font-size: medium;
     justify-content: center;
     flex-direction: column;
     font-size: 400%;
-    padding-left: 4%;
+    padding-left: 0%;
 }
 
 .dev-picture{
     height: 35vh;
-    margin-left: 18.5%;
+    margin-left: 25%;
+    /* margin-right: -50%; */
 }
 
 .dev-picture img {
     height: 35vh;
 }
 
+.aboutTech{
+        font-family: "Workbench", sans-serif;
+        font-size: 24px;
+        padding-left: 1%;
+}
+
 .techstack{
+    font-family: "Orbitron", sans-serif;
+    font-size: medium;
     display: inline-block;
     background-color: #3498db;
     color: #fff;
