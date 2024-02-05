@@ -129,21 +129,34 @@
 
 
 .contact {
-    -webkit-text-fill-color: aliceblue;
+    width: 100vw;
     display: flex;
-    background: linear-gradient(143deg, black, transparent);
     flex-direction: column;
-    /* max-width: 800px; */
-    margin-left: 23%;
-    padding: 18%;
-    padding-left: 2%;
-    padding-right:34%;
-    padding-bottom: 14%;
-    padding-top: 10%;
+    margin-left: 200px;
+    /* justify-content: center;  */
+    /* Center children horizontally */
+    align-items:flex-start;  /*Center children vertically*/
+    padding-left: 20px;
+    background: linear-gradient(27deg, black, transparent);
+    color: #f1f1f1;
+    -webkit-text-fill-color: aliceblue;
     font-size: small;
+    height: 100vh;
+    /* padding-top: 8%; */
 }
-.contact-detail,
+.contact-detail{
+    margin-top: 10%;
+    /* padding: 10%; */
+    -webkit-text-fill-color: aliceblue;    
+    background: linear-gradient(143deg, black, transparent);
+    color: #fff;
+    padding: 20px;
+    /* margin-bottom: 20px; */
+    border-radius: 5px;
+}
+
 .contact-form {
+    margin-top: 2%;
     padding: 10%;
     -webkit-text-fill-color: aliceblue;    
     background: linear-gradient(143deg, black, transparent);
